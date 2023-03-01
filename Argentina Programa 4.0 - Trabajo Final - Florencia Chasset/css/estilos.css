@@ -1,0 +1,204 @@
+* {
+    font-family: 'Labrada', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    color: rgb(231, 105, 46);
+    background: linear-gradient(45deg,rgb(23, 25, 139), rgb(158, 67, 120), rgb(27, 240, 140));
+    background-size: 600% 600%;
+    animation: cambiar 15s ease-in-out infinite;
+}
+
+h1 {
+    margin-top: 2%;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    border: solid 3px rgb(148, 26, 26);
+    border-radius: 25px;
+    padding: 2rem 3rem;
+    background: linear-gradient(45deg,rgb(68, 70, 170), rgb(148, 133, 142), rgb(213, 230, 222));
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@keyframes cambiar {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}
+
+h2 {
+    margin-top: 3%;
+    color: brown;
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+h3 {
+    color: rgb(173, 25, 25);
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    background-color: rgb(167, 161, 165);
+    border-radius: 10%;
+    
+}
+
+div.card {
+    padding-left: 5%;
+    margin-top: 2%;
+    background-color: rgb(78, 165, 165);
+    color: rgb(0, 0, 0);
+    border-radius: 15%;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+
+}
+
+div.prof_card {
+    padding-left: 5%;
+    margin-top: 2%;
+    background-color: rgb(78, 165, 165);
+    color: rgb(217, 221, 221);
+    border-radius: 10%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+}
+
+div.app_hab {
+    padding-left: 5%;
+    margin-top: 2%;
+    background-color: rgb(78, 165, 165);
+    color: rgb(2, 2, 2);
+    border-radius: 10%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+}
+div.img_person{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 30%;
+    
+}
+div.img_person img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+    border: solid 1px black;
+}
+
+div.border_cap {
+    border: solid 2px black;
+
+}
+
+div.tec_card {
+    padding-left: 5%;
+    margin-top: 2%;
+    background-color: rgb(78, 165, 165);
+    color: rgb(2, 2, 2);
+    border-radius: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+}
+
+div.button_icon {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 30%;
+}
+
+div.button_icon image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+    border: solid 1px black;
+    
+}
+#cstm_w {
+    width: 50%;
+}
+#cstm_w .prof_card {
+    width: 85%;
+}
+
+#cstm_s {
+    width: 60%;
+}
+#cstm_s .prof_card {
+    width: 85%;
+}
+
+#form_cnt {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_conteiner {
+    width: 50%;
+    border: 2px solid black;
+    padding: 3% 0;
+}
+
+.toTop {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    /* posición */
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 9999;
+  }
+  .toTop:not(.is-visible) {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  .toTop svg {
+    stroke-width: 3px;
+    stroke: currentColor;
+    fill: none;
+    width: 24px;
+  }
+  /* Personalizar */
+  .toTop {
+    background-color: #252525;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: #fff;
+  }
+  label{
+    color: rgb(14, 14, 85);
+    font-weight: bold;
+  }
